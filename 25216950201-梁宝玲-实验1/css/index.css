@@ -1,0 +1,297 @@
+/* banner区域 */
+.banner{
+  /* height: 500px; */
+  background-color: #f5f5f5;
+}
+.banner .wrapper{
+  display: flex;
+  position: relative;
+}
+
+/* 侧导航 */
+.subnav{
+  width: 250px;
+  background-color: rgba(0, 0, 0,0.6);
+}
+.subnav li{
+  display: flex;
+  height: 50px;
+  padding: 14px 12px 14px 29px;
+  position: relative;
+}
+.subnav a,
+.subnav .iconfont{
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+}
+.subnav a{
+  margin-right: 5px;
+}
+.subnav h4{
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 14px;
+}
+.subnav .iconfont{
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+/* 轮播图 */
+.pic{
+  display: flex;
+  width: 990px;
+  overflow: hidden;
+}
+.pic img{
+  width: 990px;
+}
+
+/* 圆点 */
+.banner ol{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.banner ol li{
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.banner i{
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* 点击圆点，给 li 和 i 分别添加背景颜色属性 */
+.active{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.active i{
+  background-color: rgb(255, 255, 255);
+}
+
+/* 新鲜好物 */
+.goods{
+  background-color: #fff;
+}
+.goods .title, .brand .title, .fresh .title{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.goods .title{
+  height: 102px;
+  margin-top: 10px;
+
+}
+.title h3{
+  font-size: 30px;
+  line-height: 42px;
+  margin-right: 35px;
+}
+.title p,
+.title a,
+.title .iconfont{
+  color: #A1A1A1;
+}
+.title p{
+  position: relative;
+  bottom: -8px;
+}
+.title .all{
+  position: absolute;
+  right: 0;
+}
+.goods .title .iconfont{
+  margin-left: 10px;
+}
+/* 内容区域 */
+.goods ul{
+  display: flex;
+  justify-content: space-between;
+}
+.goods ul li{
+  width: 304px;
+}
+.goods ul img{
+  height: 304px;
+}
+.goods .price{
+  height: 100px;
+}
+.bd .price{
+  background-color: #EEF9F4;
+}
+.goods .price p{
+  text-align: center;
+  font-size: 22px;
+  color: #AA2113;
+}
+.goods .price a{
+  display: block;
+  font-size: 20px;
+  padding: 17px 0 4px;
+}
+.recommend .price p{
+  font-size: 16px;
+  color: #A1A1A1;
+  padding-bottom: 6px;
+}
+.recommend{
+  margin-bottom: 60px;
+}
+
+/* 热门品牌 */
+.brand{
+  height: 468px;
+  background-color: #f1f1f1;
+}
+.brand .title{
+  height: 122px;
+
+}
+.title .jiantou{
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+.jiantou .left, .jiantou .right{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #e4e4e4;
+  line-height: 20px;
+  text-align: center;
+}
+.jiantou .left{
+  margin-right: 12px;
+}
+.jiantou .iconfont{
+  color: #fff;
+}
+.jiantou span:hover{
+  background-color: #5EB69C;
+}
+.brand ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 生鲜 */
+.fresh{
+  padding-top: 20px;
+}
+.fresh .title{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.fresh .title ul{
+  display: flex;
+  position: absolute;
+  right: 134px;
+}
+.fresh .title ul a{
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  color: #333;
+  padding: 0 7px;
+  margin-right: 6px;
+}
+.fresh .title ul a:hover{
+  background-color: #5EB69C;
+  color: #fff;
+}
+.fresh .content{
+  display: flex;
+}
+.fresh .content .left{
+  width: 248px;
+  height: 610px;
+  margin-right: 24px;
+}
+.fresh .content .right ul{
+  display: flex;
+  width: 968px;
+  flex-wrap: wrap;
+}
+.fresh .content .right li{
+  width: 242px;
+  height: 305px;
+  padding: 0 26px;
+}
+.fresh .content .right img{
+  width: 190px;
+  height: 171px;
+  margin: 14.5px 0;
+}
+.fresh .content .right a{
+  display: block;
+  width: 192px;
+  line-height: 19px;
+}
+.fresh .content .right span{
+  font-size: 22px;
+  line-height: 45px;
+  color: #AF2F22;
+}
+.fresh .content .right i{
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+/* 最新专题 */
+.topic{
+  padding-top: 70px;
+}
+.topic .title{
+  margin: 30px 0;
+  position: relative;
+}
+.topic ul{
+  height: 395px;
+  display: flex;
+}
+.topic li img{
+  display: block;
+  width: 405px;
+  height: 288px;
+  margin-bottom: 23px;
+}
+.topic div{
+  position: relative;
+}
+.topic div span{
+  margin-left: 15px;
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.topic div i{
+  font-size: 14px;
+}
+.topic div .iconfont{
+  font-size: 16px;
+  color: #888;
+}
+.topic div .iconfont:last-child{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
